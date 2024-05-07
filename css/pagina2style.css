@@ -1,0 +1,133 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    'head head img1'
+    'nav nav nav'
+    'form tabla tabla'
+    'foot tabla tabla';
+}
+
+header {
+    grid-area: head;
+    width: 200px;
+    height: 100px;
+}
+
+header img {
+    width: 250px;
+}
+
+#redes {
+    grid-area: img1;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+#redes a img {
+    width: 50px;
+    text-align: center; 
+    margin-right: 10px;
+}
+
+#redes a #inst  {
+    width: 70px;
+}
+
+nav {
+    margin-top: 30px;
+    grid-area: nav;
+    border: 1px solid black;
+    height: 40px;
+}
+
+nav a {
+    font-size: 20px;
+    padding: 30px;
+    margin-left: 250px;
+    text-decoration: none;
+    color: black;
+}
+
+aside {
+    grid-area: form;
+    border: 1px solid black;
+}
+
+main {
+    grid-area: tabla;
+    border: 1px solid black;
+}
+
+aside, main {
+    margin: 10px;
+}
+
+aside form {
+    width: 70%;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+aside form input {
+    width: 100%;
+    height: 25px;
+}
+
+aside form button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #208BCD;
+    color: white;
+    width: 100%;
+    height: 35px;
+}
+
+aside h1 {
+    text-align: center;
+}
+
+footer {
+    grid-area: foot;
+    border: 1px solid black;
+}
+
+footer img {
+    width: 70%;
+}
+
+main {
+    grid-area: tabla;
+}
+
+aside, main, footer {
+    margin: 10px;
+}
+
+main .cont {
+    display: flex;
+    padding: 50px;
+}
+
+.cont h1 {
+    margin-right: 100px;
+    padding-left: 20px;
+}
+
+#boton1, #boton2 {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: #208BCD;
+    color: white;
+}
+
+main section table thead {
+    background-color: #4EB733;
+    color: white;
+}
+
+main section table {
+    margin: auto;
+    width: 90%;
+}

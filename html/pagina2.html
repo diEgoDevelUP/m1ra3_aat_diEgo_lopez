@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="../imagenes/favicon.ico">
+    <script src="../js/pagina2javas.js"></script>
+    <link rel="stylesheet" href="../css/pagina2style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="../imagenes/intecap_logo_1.png" alt="Logo intecap">
+        </header>
+        <article id="redes">
+            <a href=""><img src="../imagenes/facebook.png" alt=""></a>
+            <a href=""><img src="../imagenes/X.avif" alt=""></a>
+            <a href=""><img src="../imagenes/inst.jfif" alt=""></a>
+            <a href=""><img src="../imagenes/youtube.png" alt=""></a>
+            <a href=""><img src="../imagenes/linkedin.avif" alt=""></a>
+        </article>
+        <nav>
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/pagina2.html">Empleados</a>
+            <a href="../html/pagina3.html">Sueldo Liquido</a>
+            <a href="../html/pagina4.html">Indemnizacion</a>
+        </nav>
+        <aside>
+            <h1>EMPLEADO</h1>
+            <form>
+                <div class="form-group">
+                    <label for="txtNombre">Nombre</label>
+                    <br>
+                    <input type="text" class="form-control" id="txtNombre">
+                </div>
+                <div class="form-group">
+                    <label for="txtIngreso">Fecha de Ingreso</label>
+                    <br>
+                    <input type="date" class="form-control" id="txtIngreso">
+                </div>
+                <div class="form-group">
+                    <label for="txtPuesto">Puesto de trabajo:</label>
+                    <select id="txtPuesto" name="txtPuesto">
+                        <option value=""></option>
+                        <option value="Gerente">Gerente</option>
+                        <option value="Recursos Humanos ">Recursos Humanos</option>
+                        <option value="Ingeniero IT">Ingeniero IT</option>
+                        <option value="Contador">Contador</option>
+                        <option value="Programador">Programador</option>
+                    </select><br>
+                </div>
+                <div class="form-group">
+                    <label for="txtSalario">Salario</label>
+                    <br>
+                    <input type="number" class="form-control" id="txtSalario">
+                </div>
+                <button id="guardar" type="button">Guardar</button>
+            </form>
+        </aside>
+        <main>
+            <div class="cont">
+                <h1>Lista de Empleados</h1>
+                <button id="boton1" type="button">Eliminar primero</button>
+                <button id="boton2" type="button">Eliminar ultimo</button>
+            </div>
+            <br>
+            <br>
+            <section>
+                <table id="tabla" border="2px solid">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Fecha de Ingreso</th>
+                            <th>Puesto</th>
+                            <th>Salario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <img src="../imagenes/intecap_logo_2.png" alt="Logotipo de intecap">
+        </footer>
+    </div>
+</body>
+
+</html>

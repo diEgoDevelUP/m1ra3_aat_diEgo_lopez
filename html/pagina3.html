@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pagina3style.css">
+    <script src="../js/pagina3javas.js"></script>
+    <link rel="icon" href="../imagenes/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Sueldo Liquido</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="../imagenes/intecap_logo_1.png" alt="Logo intecap">
+        </header>
+        <article id="redes">
+            <a href=""><img src="../imagenes/facebook.png" alt=""></a>
+            <a href=""><img src="../imagenes/X.avif" alt=""></a>
+            <a href=""><img src="../imagenes/inst.jfif" alt=""></a>
+            <a href=""><img src="../imagenes/youtube.png" alt=""></a>
+            <a href=""><img src="../imagenes/linkedin.avif" alt=""></a>
+        </article>
+        <nav>
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/pagina2.html">Empleados</a>
+            <a href="../html/pagina3.html">Sueldo Liquido</a>
+            <a href="../html/pagina4.html">Indemnizacion</a>
+        </nav>
+        <main>
+            <div class="cont">
+                <div id="form1">
+                    <h1>INGRESOS</h1>
+                    <form>
+                        <div >
+                            <label for="txtSalario">Salario</label>
+                            <br>
+                            <input class="inp" type="number"  id="txtSalario">
+                        </div>
+                        <div >
+                            <label for="txtBonificacion">Bonificacion</label>
+                            <br>
+                            <input class="inp" type="number"  id="txtBonificacion">
+                        </div>
+                        <div >
+                            <label for="txtComisiones">Comisiones</label>
+                            <br>
+                            <input class="inp" type="number"  id="txtComisiones">
+                        </div>
+                        <div >
+                            <label for="txtTotal1">Total Ingresos</label><br>
+                            <textarea  id="txtTotal1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div id="form2">
+                    <h1>EGRESOS</h1>
+                    <form>
+                        <div >
+                            <label for="txtAhorro">Ahorro</label>
+                            <br>
+                            <input class="inp" type="number"  id="txtAhorro">
+                        </div>
+                        <div >
+                            <label for="txtIgss">IGSS</label>
+                            <br>
+                            <textarea class="inp" id="txtIgss"></textarea>
+                        </div>
+                        <div >
+                            <label for="txtPrestamos">Prestamos/Otros descuentos</label>
+                            <br>
+                            <input class="inp" type="number"  id="txtPrestamos">
+                        </div>
+                        <div >
+                            <label for="txtTotal2">Total Egresos</label><br>
+                            <textarea  id="txtTotal2" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bot">
+                <button id="boton" onclick="mostrarTotalSueldo()" type="button">Obtener Sueldo Liquido</button>
+                <br>
+                <textarea  id="txtNewTotal" rows="3"></textarea>
+            </div>
+        </main>
+        <section>
+            <img src="../imagenes/intecap_logo_2.png" alt="Logo de intecap">
+        </section>
+    </div>
+</body>
+
+</html>

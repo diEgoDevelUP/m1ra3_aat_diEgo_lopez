@@ -1,0 +1,89 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    'head head img1'
+    'nav nav nav'
+    'mis mapa vis'
+    'foot foot img';
+}
+
+header {
+    grid-area: head;
+    width: 200px;
+    height: 100px;
+}
+
+header img {
+    width: 250px;
+}
+
+#redes {
+    grid-area: img1;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+#redes a img {
+    width: 50px;
+    text-align: center; 
+    margin-right: 10px;
+}
+
+#redes a #inst  {
+    width: 70px;
+}
+
+nav {
+    margin-top: 30px;
+    grid-area: nav;
+    border: 1px solid black;
+    height: 40px;
+}
+
+nav a {
+    font-size: 20px;
+    padding: 30px;
+    margin-left: 250px;
+    text-decoration: none;
+    color: black;
+}
+
+aside, main, section {
+    margin: 20px;
+}
+
+aside {
+    grid-area: mis;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+main {
+    grid-area: mapa;
+}
+
+section {
+    grid-area: vis;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+footer {
+    border: 1px solid black;
+    grid-area: foot;
+}
+
+#imgfooter {
+    border: 1px solid black;
+    grid-area: img;
+}
+
+#imgfooter img {
+    width: 100%;
+}
+
+footer, #imgfooter {
+    margin: 20px;
+}
